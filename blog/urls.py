@@ -4,5 +4,5 @@ from . import views
 
 
 urlpatterns = [
-    path('vzsultanov7814.pythonanywhere.com', views.post_list, name='post_list'),
+    path('', views.post_list, name='post_list'),
 ]
