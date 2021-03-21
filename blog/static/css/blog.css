@@ -1,12 +1,12 @@
 body {
-    background-color: #000
+    background-color: #0FFF
 }
 h1 a {
     color: #DE431F;
     font-family: 'Ranchers'
 }
 p {
-    color: #fff;
+    color: black;
     font-family: 'Oswald';
     font-size: 24px;
     padding-left:20px;
@@ -23,5 +23,5 @@ p {
     padding: 20px 20px 20px 40px;
     border-width: 10px;
     border-style: solid;
-    border-color: white;
+    border-color: black;
 }
