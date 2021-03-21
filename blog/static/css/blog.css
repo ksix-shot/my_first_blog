@@ -1,0 +1,27 @@
+body {
+    background-color: #000
+}
+h1 a {
+    color: #DE431F;
+    font-family: 'Ranchers'
+}
+p {
+    color: #fff;
+    font-family: 'Oswald';
+    font-size: 24px;
+    padding-left:20px;
+    padding-right:20px;
+}
+.page-header {
+    border: none;
+    background-color: red;
+    padding: 0;
+}
+.page-header a {
+    display: block;
+    color: black;
+    padding: 20px 20px 20px 40px;
+    border-width: 10px;
+    border-style: solid;
+    border-color: white;
+}
