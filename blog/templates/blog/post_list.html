@@ -1,26 +1,11 @@
-
-<!DOCTYPE html>
-{% load static %}
-<html lang="ru">
-<head>
-    <meta charset="UTF-8">
-    <title>Блог Влада</title>
-    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
-    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
-    <link rel="stylesheet" href="{% static 'css/blog.css' %}">
-</head>
-    <body>
-        <div class="page-header">
-            <h1><a href="/">Blog of Vlad ITacula</a></h1>
-        </div>
-
+{% extends 'blog/base.html'%}
+{% block content %}
 {% for post in posts %}
     <div class="post">
 
-        <h1><a href="">{{ post.title }}</a></h1>
+        <h1><a href="{% url 'post_detail' pk=post.pk %}">{{ post.title }}</a></h1>
         <p>{{ post.text|linebreaksbr }}</p>
         <p class="time">published: {{ post.published_date }}</p>
     </div>
 {% endfor %}
-    </body>
-</html>
+{% endblock %}
